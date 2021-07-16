@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Name: {{ product.product_name }}</h1>
+
+  <p><strong>Prepare time:</strong>{{ product.product_prepare_time }} min</p>
+  <p><strong>Price:</strong> {{ product.product_price }} $</p>
+  <a href="{% url 'products' %}" class="btn btn-info">Add To Cart</a>
+  <td><a href="" class="btn btn-primary">Order</a> </td>
+
+{% endblock %}
